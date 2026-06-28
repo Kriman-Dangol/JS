@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Zeros</title>
+</head>
+<body>
+
+<h2>Count Zeros in Array</h2>
+
+<button onclick="countZeros()">Count Zeros</button>
+
+<p id="result"></p>
+
+<script>
+function countZeros() {
+    let a = [1, 2, 0, 4, 5, 0, 7, 8, 9, 0];
+
+    let count = 0;
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === 0) {
+            count++;
+        }
+    }
+
+    document.getElementById("result").innerHTML =
+        "Total number of zeros = " + count;
+}
+
+</script>
+
+</body>
+</html>
